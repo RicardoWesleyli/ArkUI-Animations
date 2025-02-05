@@ -6,8 +6,10 @@ struct Index {
 
   build() {
     Column({space:32}) {
+      Blank()
       InfoView({text:this.userName,placeholder:'账号'})
       InfoView({text:this.password,placeholder:'密码'})
+      Blank()
     }
     .height('100%')
     .width('100%')

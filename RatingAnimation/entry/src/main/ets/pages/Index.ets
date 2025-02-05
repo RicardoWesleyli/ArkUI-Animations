@@ -24,6 +24,7 @@ struct Index {
     .height('100%')
     .width('100%')
     .backgroundColor(Color.Black)
+    .expandSafeArea([SafeAreaType.SYSTEM, SafeAreaType.CUTOUT, SafeAreaType.KEYBOARD])
   }
 }
 

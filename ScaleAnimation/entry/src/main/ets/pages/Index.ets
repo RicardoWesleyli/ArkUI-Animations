@@ -23,6 +23,7 @@ struct Index {
       });
     }
     .backgroundColor(Color.Black)
+    .expandSafeArea([SafeAreaType.SYSTEM, SafeAreaType.CUTOUT, SafeAreaType.KEYBOARD])
     .height('100%')
     .width('100%')
     .onAppear(() => {

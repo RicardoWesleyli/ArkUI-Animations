@@ -20,6 +20,7 @@ struct Index {
 
   build() {
     Column() {
+      Blank()
       Stack() {
         Text('Get Started')
           .fontSize(17)
@@ -42,6 +43,7 @@ struct Index {
       .onAppear(() => {
         this.startupAnimate();
       });
+      Blank()
     }
     .width('100%')
     .height('100%')

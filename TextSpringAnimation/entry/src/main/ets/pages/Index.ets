@@ -6,6 +6,7 @@ struct Index {
 
   build() {
     Column() {
+      Blank()
       Row({ space: 0 }) {
         ForEach(this.message.split(''), (letter: string, index: number) => {
           Text(letter)
@@ -27,6 +28,7 @@ struct Index {
       .onAppear(() => {
         this.isAnimation = true
       })
+      Blank()
     }
     .width('100%')
     .height('100%')

@@ -5,6 +5,7 @@ struct Index {
 
   build() {
     Column(){
+      Blank()
       Row({space:10}){
         SymbolGlyph(this.isAdd ? $r('sys.symbol.heart_fill') : $r('sys.symbol.heart'))
           .fontSize(23)
@@ -32,6 +33,7 @@ struct Index {
           this.isAdd = !this.isAdd
         })
       })
+      Blank()
     }
     .height('100%')
     .width('100%')

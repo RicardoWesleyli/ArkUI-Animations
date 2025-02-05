@@ -17,6 +17,7 @@ struct Index {
 
   build() {
    Column(){
+     Blank()
      Grid(){
        ForEach(this.tabItems,(item:TabBarModel)=>{
          GridItem() {

@@ -35,6 +35,7 @@ struct Index {
     .width('100%')
     .height('100%')
     .backgroundColor(Color.Black)
+    .expandSafeArea([SafeAreaType.SYSTEM, SafeAreaType.CUTOUT, SafeAreaType.KEYBOARD])
     .onAppear(()=>{
       setInterval(() => {
         animateTo({ duration: 300 }, () => {

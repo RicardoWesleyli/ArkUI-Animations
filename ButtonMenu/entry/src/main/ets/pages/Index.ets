@@ -40,6 +40,8 @@ struct Index {
           })
         })
       }
+
+      Blank()
     }
     .margin(10)
     .height('100%')

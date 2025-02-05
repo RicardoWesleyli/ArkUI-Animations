@@ -17,6 +17,7 @@ struct Index {
       .margin(10)
     }
     .backgroundColor(Color.Black)
+    .expandSafeArea([SafeAreaType.SYSTEM, SafeAreaType.CUTOUT, SafeAreaType.KEYBOARD])
     .scrollable(ScrollDirection.Vertical)
     .scrollBar(BarState.Off)
     .edgeEffect(EdgeEffect.Spring)

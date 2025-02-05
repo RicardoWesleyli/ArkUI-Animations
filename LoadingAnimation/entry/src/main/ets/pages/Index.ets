@@ -5,26 +5,6 @@ struct Index {
 
   build() {
     Stack() {
-
-      Text('Loading...')
-        .fontSize(32)
-        .fontWeight(FontWeight.Bold)
-        .fontColor(Color.Black)
-
-      Text('Loading...')
-        .fontSize(32)
-        .fontWeight(FontWeight.Bold)
-        .fontColor(Color.White)
-        .textAlign(TextAlign.Center)
-        .size({width:200,height:50})
-        .backgroundColor(Color.Black)
-        .borderRadius(8)
-        .maskShape(
-          new Circle({width: 40, height: 40})
-            .offset({ x: this.isStart ? -60 : 60 })
-            .fill(Color.White)
-        )
-
       Circle()
         .fillOpacity(0)
         .stroke(Color.White)
@@ -32,7 +12,8 @@ struct Index {
         .size({ width: 40, height: 40 })
         .offset({ x: this.isStart ? -60 : 60 })
     }
-    .backgroundColor(Color.Gray)
+    .backgroundColor(Color.Black)
+    .expandSafeArea([SafeAreaType.SYSTEM, SafeAreaType.CUTOUT, SafeAreaType.KEYBOARD])
     .size({width:'100%',height:'100%'})
     .onAppear(()=>{
       animateTo({

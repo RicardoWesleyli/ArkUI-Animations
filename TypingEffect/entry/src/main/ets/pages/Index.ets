@@ -8,6 +8,7 @@ struct Index {
 
   build() {
     Column() {
+      Blank()
       Row() {
         Text(this.displayedText)
           .fontSize(23)
@@ -34,6 +35,7 @@ struct Index {
         }, 1500)
 
       })
+      Blank()
     }
     .height('100%')
     .width('100%')

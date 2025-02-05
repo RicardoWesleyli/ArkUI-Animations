@@ -7,6 +7,7 @@ struct Index {
 
   build() {
     Column() {
+      Blank()
       Stack() {
         Image($r('app.media.image01'))
           .objectFit(ImageFit.Cover)
@@ -29,6 +30,7 @@ struct Index {
         angle: this.angle
       })
       .onClick(() => this.startFlipAnimation())
+      Blank()
     }
     .width('100%')
     .height('100%')

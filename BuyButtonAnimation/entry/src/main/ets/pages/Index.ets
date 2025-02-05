@@ -16,6 +16,7 @@ struct Index {
 
   build() {
     Column() {
+      Blank()
       Stack(){
         LoadingProgress()
           .color(Color.White)
@@ -42,6 +43,7 @@ struct Index {
       .backgroundColor(Color.Black)
       .borderRadius(32)
       .onClick(() => this.handleClick())
+      Blank()
     }
     .height('100%')
     .width('100%')
