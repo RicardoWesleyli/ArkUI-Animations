@@ -26,3 +26,6 @@ All demos in this repo were written by ArkTS and ArkUI. The only purpose of this
 
 ## About me
 ![](img_hde.jpg)
+
+## Important information
+For learning and sharing purposes only. Commercial use is not allowed without my permission.
